@@ -20,9 +20,8 @@ int main() {
         int counter = 0;
         for( int i = 0; i < N; i++) {
             cin>>arrival[i];
-            if(checkAllowed(arrival[i])) {
+            if(checkAllowed(arrival[i]))
                 counter++;
-            }    
         }
         results[T] = counter >= K ? "YES" : "NO";
     }
